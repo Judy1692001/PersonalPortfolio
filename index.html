@@ -10,11 +10,15 @@
 
     <link rel="icon" type="image/png" href="/Assets/professional-portfolio.png">
 
+    <link rel="stylesheet" href="style.css">
+
     <title> Judy Soliman | Frontend Developer From Cairo, Egypt </title>
 
 </head>
 
 <body>
+
+    <div class="overlay"></div>
 
     <header>
 
@@ -22,15 +26,57 @@
 
             <ul>
 
-                <li> <a href="#"> <img src="/Assets/briefcase.png" alt="portfolio logo"> </a> </li>
+                <li> <a href="#"> <img id="portfolio-logo" src="/Assets/briefcase.png" alt="portfolio logo"> </a> </li>
 
-                <li> <a href="#"> <img src="/Assets/menu.png" alt="menu-bar"> </a> </li>
+                <li> <a href="#"> <img id="menu-icon" src="/Assets/menu.png" alt="menu-icon"> </a> </li>
 
             </ul>
 
+            <div class="menu-bar">
+
+                <div>
+
+                    <img src="/Assets/briefcase.png" id="portfolio-icon" alt="portfolio-logo">
+
+                    <a href="#"> <img src="/Assets/close.png" id="close-icon" alt="close-icon"> </a>
+
+                </div>
+
+                <div>
+
+                    <ul>
+
+                        <li> <a href="#"> About </a> </li>
+
+                        <li> <a href="#"> Work </a> </li>
+
+                        <li> <a href="#"> Testimonials </a> </li>
+
+                        <li> <a href="#"> Contact </a> </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <p> Switch Theme </p>
+
+                    <a href="#"> <img src="/Assets/dark-mode.png" id="dark-mode" alt="dark mode icon"> </a>
+
+                </div>
+
+                <div>
+
+                    <button> <a href="/Assets/CV.pdf" target="_blank"> Download CV </a> </button>
+
+                </div>
+
+            </div>
+
         </nav>
 
-    </header>
+    <!-- </header>
 
     <article>
 
@@ -161,7 +207,9 @@
 
         </section>
 
-    </article>
+    </article> -->
+
+    <script src="index.js"></script>
 
 </body>
 
