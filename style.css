@@ -519,7 +519,305 @@ button:hover {
 } */
 
 
+.hero-section {
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.personal-image-container {
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.personal-image-container img {
+    /* width: 150px; */
+    /* width: 50%; */
+    width: 250px;
+    height: auto;
+    border-top: 3px solid #b36e6e;
+    border-left: 3px solid #b36e6e;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.intro-container {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-1 {
+    /* border: 1px solid green;  */
+    /* width: 100%;
+    height: auto; */
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding-left: 0.5rem;
+}
+
+.intro-1 h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 0.5rem; */
+    margin-bottom: 1rem;
+    /* border: 1px solid; */
+}
+
+/* should be animated wave */
+.intro-1 img {
+    /* border: 1px solid; */
+    width: 20px;
+    height: auto;
+    margin-left: 0.5rem;
+    color: #111827;
+}
+
+.intro-1 p {
+    /* border: 1px solid; */
+    color: #4b5563;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+.intro-2 {
+    /* border: 1px solid purple;  */
+    /* width: 100%;
+    height: auto; */
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.intro-2 p {
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b5563;
+    font-size: 0.8rem;
+}
+
+.intro-2 img {
+    /* border: 1px solid darkblue; */
+    margin-right: 0.5rem;
+    width: 20px;
+    height: auto;
+}
+
+.status-indicator {
+    /* width: 5vw;
+    height: auto; */
+    background-color: #a7e3b5;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(117, 168, 129, 0.8);
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(117, 168, 129, 0.8);
+    }
+
+    50% {
+        opacity: 0.3;
+        box-shadow: 0 0 5px rgba(117, 168, 129, 0.8);
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(117, 168, 129, 0.8);
+    }
+}
+
+.intro-3 {
+    /* border: 1px solid firebrick;
+    background-color: #e2cbcb;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intro-3 a {
+    /* margin-right: 0.5rem; */
+    /* border: 1px solid; */
+}
+
+.intro-3 img {
+    width: 20px;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .personal-image-container {
+        display: flex;
+        justify-content: end;
+        order: 1;
+        /* width: 35%; */
+    }
+
+    .personal-image-container img {
+        /* width: 150px; */
+        /* width: 100%; */
+        width: 70%;
+        height: auto;
+    }
+
+    .intro-container {
+        /* border: 2px solid red; */
+        /* width: 100%; */
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .intro-1 {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .intro-1 h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* should be animated wave */
+    .intro-1 img {
+        /* border: 1px solid; */
+        width: 30px;
+    }
+
+    .intro-1 p {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .intro-2 {
+        margin-bottom: 3rem;
+        gap: 1rem;
+        align-items: start;
+    }
+
+    .intro-2 p {
+        font-size: 1rem;
+    }
+
+    .intro-2 img {
+        width: 30px;
+    }
+
+    .intro-3 {
+        gap: 1rem;
+    }
+
+    .intro-3 img {
+        width: 30px;
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .personal-image-container {
+        /* width: 20%; */
+        justify-content: end;
+    }
+
+    .personal-image-container img {
+        /* width: 150px; */
+        width: 80%;
+    }
+
+    .intro-container {
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .intro-1 {
+        margin-bottom: 2rem;
+    }
+
+    .intro-1 h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* should be animated wave */
+    .intro-1 img {
+        width: 30px;
+    }
+
+    .intro-1 p {
+        font-size: 1rem;
+    }
+
+    .intro-2 {
+        margin-bottom: 3rem;
+        gap: 1.5rem;
+
+    }
+
+    .intro-2 p {
+        font-size: 1rem;
+    }
+
+    .intro-2 img {
+        width: 30px;
+    }
+
+    .intro-3 {
+        /* border: 1px solid firebrick; */
+        margin-bottom: 0rem;
+    }
+
+    .intro-3 img {
+        width: 30px;
+    }
+}
 
 /* body>article {
     width: 100vw;
