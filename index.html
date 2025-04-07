@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+
     <title> Judy Soliman | Frontend Developer From Cairo, Egypt </title>
 
 </head>
@@ -29,8 +30,8 @@
             <nav>
             
                 <ul class="main-nav">
-            
-                    <li> <a href="#"> <img id="portfolio-logo" src="/Assets/logo.png" alt="portfolio logo"> </a> </li>
+            <!--<img id="portfolio-logo" src="/Assets/logo.png" alt="portfolio logo">-->
+                    <li id="logo"> <a href="#"> &lt;js/&gt; </a> </li>
 
                     <div class="nav-links-container">
 
@@ -50,8 +51,13 @@
                         
                         </ul>
                         
-                        <button id="dark-mode-btn" aria-label="Toggle dark mode"> <img src="/Assets/dark-mode.png" id="dark-mode"
-                                alt="dark mode icon"> </button>
+                        <button id="nav-theme-toggler" aria-label="Toggle dark mode">
+                            
+                            <!-- <img src="/Assets/dark-mode.png" id="dark-mode" alt="dark mode icon"> -->
+
+                            <i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
+                        
+                        </button>
                         
                         <div class="menu-download">
                         
@@ -60,9 +66,17 @@
                         </div>
 
                     </div>
-            
-                    <li> <button id="menu-btn" aria-label="Open menu"> <img id="menu-icon" src="/Assets/menu.png" alt="menu-icon">
-                        </button> </li>
+            <!--<img id="menu-icon" src="/Assets/menu.png" alt="menu-icon">-->
+
+                    <li>
+                        
+                        <button id="menu-btn" aria-label="Open menu"> 
+                            
+                            <i class="fa-solid fa-bars fa-2xl"></i>
+                        
+                        </button>
+                    
+                    </li>
             
                 </ul>
             
@@ -76,7 +90,13 @@
         
                 <!-- <img src="/Assets/logo.png" id="portfolio-logo" alt="portfolio-logo"> -->
         
-                <button id="close-btn" aria-label="Close menu"> <img src="/Assets/close.png" id="close-icon" alt="close-icon"> </button>
+                <button id="close-btn" aria-label="Close menu">
+                    
+                    <i class="fa-solid fa-xmark fa-xl" id="close-icon"></i>
+                    
+                    <!-- <img src="/Assets/close.png" id="close-icon" alt="close-icon"> -->
+                
+                </button>
         
             </div>
         
@@ -104,7 +124,13 @@
         
                 <p> Switch Theme </p>
         
-                <button id="dark-mode-btn" aria-label="Toggle dark mode"> <img src="/Assets/dark-mode.png" id="dark-mode" alt="dark mode icon"> </button>
+                <button id="menu-theme-toggler" aria-label="Toggle dark mode">
+                    
+                    <!-- <img src="/Assets/dark-mode.png" id="menu-dark-mode" alt="dark mode icon"> -->
+
+                    <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
+                
+                </button>
 
             </div>
         
@@ -142,20 +168,51 @@
             
             <section class="intro-2">
             
-                <p> <img src="/Assets/location.png" alt="my-location"> Cairo, Egypt </p>
+                <p>
+                    
+                    <!-- <img src="/Assets/location.png" alt="my-location"> -->
+
+                    <i class="fa-solid fa-location-dot fa-lg"></i>
+
+                    Cairo, Egypt
+                
+                </p>
             
-                <p> <img src="/Assets/availabilitystate.png" alt="availability state" class="status-indicator"> Available
-                    for new projects </p>
+                <p>
+                    
+                    <img src="/Assets/availabilitystate.png" alt="availability state" class="status-indicator">
+                    
+                    Available for new projects
+                
+                </p>
             
             </section>
             
             <section class="intro-3">
             
-                <a href="https://github.com/Judy1692001" target="_blank"> <img src="/Assets/github.png" alt="github account"> </a>
+                <a href="https://github.com/Judy1692001" target="_blank">
+                    
+                    <!-- <img src="/Assets/github.png" alt="github account"> -->
+
+                    <i class="fa-brands fa-github fa-lg"></i>
+                
+                </a>
             
-                <a href="https://www.linkedin.com/in/judysoliiman/" target="_blank"> <img src="/Assets/linkedin.png" alt="linkedin account"> </a>
+                <a href="https://www.linkedin.com/in/judysoliiman/" target="_blank">
+                    
+                    <!-- <img src="/Assets/linkedin.png" alt="linkedin account"> -->
+
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                
+                </a>
             
-                <a href="https://www.figma.com/@judysoliman" target="_blank"> <img src="/Assets/figma.png" alt="figma account"> </a>
+                <a href="https://www.figma.com/@judysoliman" target="_blank">
+                    
+                    <!-- <img src="/Assets/figma.png" alt="figma account"> -->
+
+                    <i class="fa-brands fa-figma fa-lg"></i>
+                
+                </a>
             
             </section>
 
@@ -242,8 +299,13 @@
 
             <div>
 
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img
-                        src="/Assets/js.png" alt="javascript documentation"> </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                    
+                    <!-- <img src="/Assets/js.png" alt="javascript documentation"> -->
+
+                    <i class="fa-brands fa-js fa-2xl" style="color: #FFD43B;"></i>
+                
+                </a>
 
                 <p> Javascript </p>
 
@@ -251,8 +313,13 @@
 
             <div>
 
-                <a href="https://www.figma.com/developers/api" target="_blank"> <img src="/Assets/figma.png"
-                        alt="figma documentation"> </a>
+                <a href="https://www.figma.com/developers/api" target="_blank">
+                    
+                    <!-- <img src="/Assets/figma.png" alt="figma documentation"> -->
+
+                    <i class="fa-brands fa-figma fa-2xl"></i>
+                
+                </a>
 
                 <p> Figma </p>
 
@@ -260,7 +327,12 @@
 
             <div>
 
-                <a href="https://git-scm.com/doc" target="_blank"> <img src="/Assets/git.png" alt="git documentation">
+                <a href="https://git-scm.com/doc" target="_blank">
+                    
+                    <!-- <img src="/Assets/git.png" alt="git documentation"> -->
+
+                    <i class="fa-brands fa-git fa-2xl" style="color: #ffaa00;"></i>
+
                 </a>
 
                 <p> Git </p>
@@ -425,7 +497,7 @@
                     
                     <a href="https://judy1692001.github.io/PersonalPortfolio/" target="_blank">
                         
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         
                     </a>
 
@@ -469,7 +541,7 @@
             
                     <a href="https://judy1692001.github.io/PharmacyWebsite/" target="_blank">
             
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
             
                     </a>
             
@@ -514,7 +586,7 @@
             
                     <a href="https://judy1692001.github.io/Connect4Game/" target="_blank">
             
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
             
                     </a>
             
@@ -557,7 +629,7 @@
             
                     <a href="https://judy1692001.github.io/RegistrationForm/" target="_blank">
             
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
             
                     </a>
             
@@ -601,7 +673,7 @@
             
                     <a href="https://judy1692001.github.io/To-Do-List-Website/" target="_blank">
             
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
             
                     </a>
             
@@ -609,7 +681,7 @@
             
             </div>
 
-            <div>
+            <!-- <div>
             
                 <div class="work-demo">
 
@@ -639,13 +711,13 @@
                     
                     <a href="https://judy1692001.github.io/Simon-Game/" target="_blank">
                         
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                     </a>
 
                 </div>
 
-            </div>
+            </div> -->
 
             <div>
             
@@ -682,7 +754,7 @@
             
                     <a href="https://judy1692001.github.io/DrumKit-Challenge/" target="_blank">
             
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
             
                     </a>
             
@@ -724,7 +796,7 @@
                     
                     <a href="https://judy1692001.github.io/Dice-Challenge/" target="_blank">
                         
-                        <i class="fa-solid fa-arrow-up-right-from-square" style="color: #111827;"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     
                     </a>
 
@@ -804,17 +876,27 @@
 
         <p>
             
-            <img src="/Assets/email.png" alt="email icon" id="email"> <span class="email-text"> judysoliiman@gmail.com </span>
+            <!-- <img src="/Assets/email.png" alt="email icon" id="email"> -->
+
+            <i class="fa-solid fa-envelope fa-lg"></i>
             
-            <img src="/Assets/copy.png" alt="copy icon" id="copy-email">
+            <span class="email-text"> judysoliiman@gmail.com </span>
+            
+            <!-- <img src="/Assets/copy.png" alt="copy icon" id="copy-email"> -->
+
+            <i class="fa-solid fa-copy fa-lg" id="copy-email"></i>
         
         </p>
 
         <p>
             
-            <img src="/Assets/phone.png" alt="phone icon" id="phone-number"> <span class="phone-text"> +201098160035 </span>
+            <!-- <img src="/Assets/phone.png" alt="phone icon" id="phone-number"> -->
+
+            <i class="fa-solid fa-phone fa-lg"></i>
             
-            <img src="/Assets/copy.png" alt="copy icon" id="copy-phone-number">
+            <span class="phone-text"> +201098160035 </span>
+            
+            <i class="fa-solid fa-copy fa-lg" id="copy-phone"></i>
 
         </p>
 
@@ -824,19 +906,25 @@
 
             <a href="https://github.com/Judy1692001" target="_blank">
                 
-                <img src="/Assets/github.png" alt="github icon">
+                <!-- <img src="/Assets/github.png" alt="github icon"> -->
+
+                <i class="fa-brands fa-github fa-lg"></i>
 
             </a>
 
             <a href="https://x.com/judy_soliiman" target="_blank">
                 
-                <img src="/Assets/twitter.png" alt="twitter icon">
+                <!-- <img src="/Assets/twitter.png" alt="twitter icon"> -->
+
+                <i class="fa-brands fa-twitter fa-lg"></i>
 
             </a>
 
             <a href="https://www.figma.com/@judysoliman" target="_blank">
                 
-                <img src="/Assets/figma.png" alt="figma icon">
+                <!-- <img src="/Assets/figma.png" alt="figma icon"> -->
+
+                <i class="fa-brands fa-figma fa-lg"></i>
                 
             </a>
 
@@ -848,7 +936,9 @@
 
         <p> 
             
-            <img src="/Assets/copyright.png" alt="copyright icon">
+            <!-- <img src="/Assets/copyright.png" alt="copyright icon"> -->
+
+            <i class="fa-solid fa-copyright fa-sm"></i>
             
             2025 | 
             

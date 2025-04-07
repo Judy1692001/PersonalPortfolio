@@ -113,7 +113,7 @@ const copyEmail = document.querySelector('#copy-email');
 
 const phone = document.querySelector('.phone-text');
 
-const copyPhone = document.querySelector('#copy-phone-number');
+const copyPhone = document.querySelector('#copy-phone');
 
 copyEmail.addEventListener('click', () => {
 
@@ -143,9 +143,17 @@ copyPhone.addEventListener('click', () => {
 
 });
 
-const themeBtn = document.getElementById('dark-mode-btn');
+const themeBtn = document.getElementById('nav-theme-toggler');
 
 themeBtn.addEventListener('click', () => {
+
+    body.classList.toggle('dark-theme');
+
+});
+
+const menuThemeTglr = document.getElementById('menu-theme-toggler');
+
+menuThemeTglr.addEventListener('click', () => {
 
     body.classList.toggle('dark-theme');
 
